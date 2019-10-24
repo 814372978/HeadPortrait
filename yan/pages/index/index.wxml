@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+	<!-- 背景图 -->
+	<view class="bg">
+		<image src="../../image/bg.png">
+			
+		</image>
+	</view>
+	<!-- 头部换颜 -->
+	<view class="topText">
+		<image src="../../image/20190906-logo2.png"></image>
+	</view>
+	<!--  -->
+	<view style="color: #ffeeaf;font-size: 18px;text-align: center;font-weight: bold;margin: 10px 0;">
+		
+		领取专属你的国庆头像
+		
+	</view>
+	
+	<view style="color: #ffe1c5; font-size: 16px;text-align: center;">
+		
+		现在已有<text style="background:rgba(0,0,0,.1)">1500万</text>人参与了活动	
+		
+	</view>
+	
+	<view class="canvasBox">
+		<view class="left" bindtap="leftClick"> 
+			<image src="../../image/btn.png" style="transform: rotate(180deg);" ></image>
+		 </view>
+		<canvas canvas-id="mycanvas" style="width:150px; height: 150px;background: #fff;" class="canvas"></canvas>
+		<view class="right" bindtap='rightClick'>
+			<image src="../../image/btn.png"></image>
+		</view>
+	</view>
+	<view class="btnBox">
+		<button class="btn1" type="primary" bindtap="uploadImage">
+			上传图片
+		</button>
+		<button class="btn2" type="primary" bindtap="bao">
+			保存图片
+		</button>
+	</view>
+</view>
+ 
